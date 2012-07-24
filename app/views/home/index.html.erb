@@ -1,0 +1,6 @@
+<%= rgviz :id => 'my_visualization',
+  :kind => 'LineChart',
+  :url => url_for(:controller => :home, :action => :rgviz),
+  :query => 'select created_at, age where age is not NULL',
+  :html => {:style => 'width:700px;height:240px'}
+  %>
